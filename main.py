@@ -77,12 +77,61 @@
 
 # SET - COLLECTION WHICH IS UNORDERED, UNINDEXED. NO DUPLICATE VALUES
 
-utensils = {'fork', 'spoon', 'knife'}
-dishes = {'plate', 'bowl', 'cup', 'knife'}
-
-utensils.add('Jar')
+# utensils = {'fork', 'spoon', 'knife'}
+# dishes = {'plate', 'bowl', 'cup', 'knife'}
+#
+# utensils.add('Jar')
 # utensils.pop()
-dishes.update(utensils)
+# dishes.update(utensils)
 # print(utensils.intersection(dishes))
+# print(dishes)
 
-print(dishes)
+# Dictionary - A changeable, unordered collection of unique key:values pairs
+#              fast because they use hashing , allow us to access a values quickly
+
+# capitals = {'USA': 'Washinton DC',
+#             'Somalia':'Mogadishu',
+#             'India': 'New Delhi',
+#             'Russia': 'Mosco',
+#             'Germany': 'Berlin'}
+
+# print(capitals.get('Ethiopia'))
+# print(capitals.items())
+# print(capitals.values())
+# print(capitals.keys())
+#
+# for key,value in capitals.items():
+#     print(key + ', ' + value)
+
+# FUNCTION IN PYTHON - a block of code which is executed only when it is called
+# first function
+
+# def hello():
+#     print("Hello")
+#
+#
+# hello()
+# hello()
+# hello()
+
+# def hello(name, age, address):
+#     print('Hello, ' + name + ' you are ' + str(age) + ' years old' + ' your location ' + address)
+#
+#
+# name = input("Enter your name: ")
+# age = int(input("Enter your age: "))
+# address = input("Enter your address: ")
+# hello(name, age, address)
+
+
+# Return statement - Function send Python values/objects back to the caller.
+#                   These values/objects are known as the function's return value
+
+def multiply(number1, number2):
+    return number1 * number2
+
+
+num1 = int(input("Enter first number: "))
+numb2 = int(input("Enter second number: "))
+x = multiply(num1, numb2)
+print(x)
