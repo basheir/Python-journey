@@ -55,9 +55,34 @@
 # drink = ['coffee', 'soda', 'tea']
 # dinner = ['pizza', 'hamburger', 'hotdog']
 # dessert = ['cake', 'ice cream']
-#
+
 #
 # food = [drink, dinner, dessert]
 #
 # for i in food:
 #     print(i)
+
+
+# TUPLE - COLLECTION OF ORDERED AND UNCHANGEABLE USED TO  GROUP TOGETHER RELATED DATA.
+# student = ('Bashir', 33, 'male')
+# print(student.count('Bashir'))
+# print(student.index('male'))
+
+# for x in student:
+#     print(x)
+#
+# if "Bashir" in student:
+#     print("Bashir is here! ")
+
+
+# SET - COLLECTION WHICH IS UNORDERED, UNINDEXED. NO DUPLICATE VALUES
+
+utensils = {'fork', 'spoon', 'knife'}
+dishes = {'plate', 'bowl', 'cup', 'knife'}
+
+utensils.add('Jar')
+# utensils.pop()
+dishes.update(utensils)
+# print(utensils.intersection(dishes))
+
+print(dishes)
