@@ -127,11 +127,35 @@
 # Return statement - Function send Python values/objects back to the caller.
 #                   These values/objects are known as the function's return value
 
-def multiply(number1, number2):
-    return number1 * number2
+# def multiply(number1, number2):
+#     return number1 * number2
+#
+#
+# num1 = int(input("Enter first number: "))
+# numb2 = int(input("Enter second number: "))
+# x = multiply(num1, numb2)
+# print(x)
 
 
-num1 = int(input("Enter first number: "))
-numb2 = int(input("Enter second number: "))
-x = multiply(num1, numb2)
-print(x)
+# KEYWORD ARGUMENT - arguments preceded by an identifier when we pass them to a full function
+#                     The order of the arguments does not matter, unlike positional argument
+#                     Python knows the names of the arguments that our function receive.
+
+
+# def hello(firstname, middlename, lastname):
+#     print('Hello, ' + firstname + ' ' + middlename + ' ' + lastname)
+#
+#
+# hello(lastname="Abdilahi", middlename='Mahad', firstname='Bashir')
+# hello(lastname="Abdilahi", middlename='Mahad', firstname='Faadumo')
+
+
+# NESTED FUNCTION CALLS - function calls inside other function
+
+num = input("Enter a whole number positive number: ")
+# num = float(num)
+# num = abs(num)
+# num = round(num)
+
+print(round(abs(float(num))))
+
