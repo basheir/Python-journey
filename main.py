@@ -127,11 +127,81 @@
 # Return statement - Function send Python values/objects back to the caller.
 #                   These values/objects are known as the function's return value
 
-def multiply(number1, number2):
-    return number1 * number2
+# def multiply(number1, number2):
+#     return number1 * number2
+#
+#
+# num1 = int(input("Enter first number: "))
+# numb2 = int(input("Enter second number: "))
+# x = multiply(num1, numb2)
+# print(x)
 
 
-num1 = int(input("Enter first number: "))
-numb2 = int(input("Enter second number: "))
-x = multiply(num1, numb2)
-print(x)
+# KEYWORD ARGUMENT - arguments preceded by an identifier when we pass them to a full function
+#                     The order of the arguments does not matter, unlike positional argument
+#                     Python knows the names of the arguments that our function receive.
+
+
+# def hello(firstname, middlename, lastname):
+#     print('Hello, ' + firstname + ' ' + middlename + ' ' + lastname)
+#
+#
+# hello(lastname="Abdilahi", middlename='Mahad', firstname='Bashir')
+# hello(lastname="Abdilahi", middlename='Mahad', firstname='Faadumo')
+
+
+# NESTED FUNCTION CALLS - function calls inside other function
+
+# num = input("Enter a whole number positive number: ")
+# # num = float(num)
+# # num = abs(num)
+# # num = round(num)
+#
+# print(round(abs(float(num))))
+
+# RANDOM - RANDOM METHOD
+
+import random
+
+x = random.randint(1,6)
+y = random.random()
+
+myList = ['rock', 'paper', 'scissors']
+z = random.choice(myList)
+
+cards = [1, 2, 3, 4, 5, 6, 7, 8, 9, 'J', 'Q', 'K', 'A']
+random.shuffle(cards)
+
+print(cards)
+
+# Exception Handling
+
+try:
+    numerator = int(input("Enter a number to divide: "))
+    denominator = int(input('Enter a number to divide by: '))
+    result = numerator / denominator
+
+except ValueError as e:
+    print(e)
+    print('Enter only number please')
+except ZeroDivisionError as e:
+    print(e)
+    print(e, ', You cannot divide by zero!')
+except Exception as e:
+    print(e)
+    print('Something went wrong!')
+else:
+    print(result)
+
+
+# MODULES -  a file that containing python code. May contain a function, class, etc.
+#            used with modular programming, which is separate a program into parts
+
+# import  messages
+# import messages as msg
+# from messages import *
+from  messages import hello,bye
+hello()
+bye()
+
+
