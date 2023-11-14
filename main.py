@@ -152,10 +152,24 @@
 
 # NESTED FUNCTION CALLS - function calls inside other function
 
-num = input("Enter a whole number positive number: ")
-# num = float(num)
-# num = abs(num)
-# num = round(num)
+# num = input("Enter a whole number positive number: ")
+# # num = float(num)
+# # num = abs(num)
+# # num = round(num)
+#
+# print(round(abs(float(num))))
 
-print(round(abs(float(num))))
+#RANDOM - RANDOM METHOD
 
+import random
+
+x = random.randint(1,6)
+y = random.random()
+
+myList = ['rock', 'paper', 'scissors']
+z = random.choice(myList)
+
+cards = [1, 2, 3, 4, 5, 6, 7, 8, 9, 'J', 'Q', 'K', 'A']
+random.shuffle(cards)
+
+print(cards)
