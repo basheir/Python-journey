@@ -161,37 +161,37 @@
 
 # RANDOM - RANDOM METHOD
 
-import random
-
-x = random.randint(1,6)
-y = random.random()
-
-myList = ['rock', 'paper', 'scissors']
-z = random.choice(myList)
-
-cards = [1, 2, 3, 4, 5, 6, 7, 8, 9, 'J', 'Q', 'K', 'A']
-random.shuffle(cards)
-
-print(cards)
+# import random
+#
+# x = random.randint(1,6)
+# y = random.random()
+#
+# myList = ['rock', 'paper', 'scissorss']
+# z = random.choice(myList)
+#
+# cards = [1, 2, 3, 4, 5, 6, 7, 8, 9, 'J', 'Q', 'K', 'A']
+# random.shuffle(cards)
+#
+# print(cards)
 
 # Exception Handling
 
-try:
-    numerator = int(input("Enter a number to divide: "))
-    denominator = int(input('Enter a number to divide by: '))
-    result = numerator / denominator
-
-except ValueError as e:
-    print(e)
-    print('Enter only number please')
-except ZeroDivisionError as e:
-    print(e)
-    print(e, ', You cannot divide by zero!')
-except Exception as e:
-    print(e)
-    print('Something went wrong!')
-else:
-    print(result)
+# try:
+#     numerator = int(input("Enter a number to divide: "))
+#     denominator = int(input('Enter a number to divide by: '))
+#     result = numerator / denominator
+#
+# except ValueError as e:
+#     print(e)
+#     print('Enter only number please')
+# except ZeroDivisionError as e:
+#     print(e)
+#     print(e, ', You cannot divide by zero!')
+# except Exception as e:
+#     print(e)
+#     print('Something went wrong!')
+# else:
+#     print(result)
 
 
 # MODULES -  a file that containing python code. May contain a function, class, etc.
@@ -200,8 +200,59 @@ else:
 # import  messages
 # import messages as msg
 # from messages import *
-from  messages import hello,bye
-hello()
-bye()
+# from  messages import hello,bye
+# hello()
+# bye()
+
+# help('modules')
 
 
+# SIMPLE GAGE
+
+import random
+
+while True:
+    choices = ['rock', 'paper', 'scissors']
+
+    computer = random.choice(choices)
+    player = None
+    while player not in choices:
+        player = input("rock, paper or scissors?: ").lower()
+
+    if player == computer:
+        print('computer: ', computer)
+        print('player', player)
+        print('Tie!')
+    elif player == 'rock':
+        if computer == 'paper':
+            print('computer: ', computer)
+            print('player', player)
+            print('You lose!')
+        if computer == 'scissors':
+            print('computer: ', computer)
+            print('player', player)
+            print('You win!')
+
+    elif player == 'scissors':
+        if computer == 'rock':
+            print('computer: ', computer)
+            print('player', player)
+            print('You lose!')
+        if computer == 'paper':
+            print('computer: ', computer)
+            print('player', player)
+            print('You win!')
+
+    elif player == 'paper':
+        if computer == 'scissors':
+            print('computer: ', computer)
+            print('player', player)
+            print('You lose!')
+        if computer == 'rock':
+            print('computer: ', computer)
+            print('player', player)
+            print('You win!')
+    play_again = input("Play again! (yes/no): ").lower()
+    if play_again != 'yes':
+        break
+print("Bye!")
