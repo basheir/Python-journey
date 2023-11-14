@@ -159,7 +159,7 @@
 #
 # print(round(abs(float(num))))
 
-#RANDOM - RANDOM METHOD
+# RANDOM - RANDOM METHOD
 
 import random
 
@@ -173,3 +173,35 @@ cards = [1, 2, 3, 4, 5, 6, 7, 8, 9, 'J', 'Q', 'K', 'A']
 random.shuffle(cards)
 
 print(cards)
+
+# Exception Handling
+
+try:
+    numerator = int(input("Enter a number to divide: "))
+    denominator = int(input('Enter a number to divide by: '))
+    result = numerator / denominator
+
+except ValueError as e:
+    print(e)
+    print('Enter only number please')
+except ZeroDivisionError as e:
+    print(e)
+    print(e, ', You cannot divide by zero!')
+except Exception as e:
+    print(e)
+    print('Something went wrong!')
+else:
+    print(result)
+
+
+# MODULES -  a file that containing python code. May contain a function, class, etc.
+#            used with modular programming, which is separate a program into parts
+
+# import  messages
+# import messages as msg
+# from messages import *
+from  messages import hello,bye
+hello()
+bye()
+
+
