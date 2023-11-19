@@ -208,51 +208,65 @@
 
 
 # SIMPLE GAGE
+#
+# import random
+#
+# while True:
+#     choices = ['rock', 'paper', 'scissors']
+#
+#     computer = random.choice(choices)
+#     player = None
+#     while player not in choices:
+#         player = input("rock, paper or scissors?: ").lower()
+#
+#     if player == computer:
+#         print('computer: ', computer)
+#         print('player', player)
+#         print('Tie!')
+#     elif player == 'rock':
+#         if computer == 'paper':
+#             print('computer: ', computer)
+#             print('player', player)
+#             print('You lose!')
+#         if computer == 'scissors':
+#             print('computer: ', computer)
+#             print('player', player)
+#             print('You win!')
+#
+#     elif player == 'scissors':
+#         if computer == 'rock':
+#             print('computer: ', computer)
+#             print('player', player)
+#             print('You lose!')
+#         if computer == 'paper':
+#             print('computer: ', computer)
+#             print('player', player)
+#             print('You win!')
+#
+#     elif player == 'paper':
+#         if computer == 'scissors':
+#             print('computer: ', computer)
+#             print('player', player)
+#             print('You lose!')
+#         if computer == 'rock':
+#             print('computer: ', computer)
+#             print('player', player)
+#             print('You win!')
+#     play_again = input("Play again! (yes/no): ").lower()
+#     if play_again != 'yes':
+#         break
+# print("Bye!")
 
-import random
 
-while True:
-    choices = ['rock', 'paper', 'scissors']
+# OBJECT-ORIENTED PROGRAMMING IN PYTHON
 
-    computer = random.choice(choices)
-    player = None
-    while player not in choices:
-        player = input("rock, paper or scissors?: ").lower()
+from car import Car
 
-    if player == computer:
-        print('computer: ', computer)
-        print('player', player)
-        print('Tie!')
-    elif player == 'rock':
-        if computer == 'paper':
-            print('computer: ', computer)
-            print('player', player)
-            print('You lose!')
-        if computer == 'scissors':
-            print('computer: ', computer)
-            print('player', player)
-            print('You win!')
+car_1 = Car("Toyota","barado", 2021, "White", )
 
-    elif player == 'scissors':
-        if computer == 'rock':
-            print('computer: ', computer)
-            print('player', player)
-            print('You lose!')
-        if computer == 'paper':
-            print('computer: ', computer)
-            print('player', player)
-            print('You win!')
+print(car_1)
 
-    elif player == 'paper':
-        if computer == 'scissors':
-            print('computer: ', computer)
-            print('player', player)
-            print('You lose!')
-        if computer == 'rock':
-            print('computer: ', computer)
-            print('player', player)
-            print('You win!')
-    play_again = input("Play again! (yes/no): ").lower()
-    if play_again != 'yes':
-        break
-print("Bye!")
+
+
+
+
